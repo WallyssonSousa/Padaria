@@ -1,0 +1,204 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+/*Geral*/
+
+.container-center{
+    display: grid;
+    place-items: center;
+}
+
+/*Estilos Index.html*/
+
+.header{
+    margin: 20px;
+}
+
+.logo-name{
+    color: #cc6520; 
+    font-weight: 900;               
+}
+
+.navbar-item-color{
+    font-weight: 500;
+    color: #000;
+}
+
+.container-image{
+    display: grid; 
+    place-items: center;
+}
+
+
+
+
+/*Estilos Produtos.html*/
+
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+
+.card-produto {
+    width: 300px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 13px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+  }
+
+  .card-img{
+    width: 100px;
+  }
+  
+  .produtoHeading {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: rgb(26, 26, 26);
+  }
+  
+  .produtoDescription {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+  }
+  
+  .acceptButton {
+    width: 80px;
+    height: 30px;
+    background-color: #cc6520;
+    transition-duration: .2s;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+
+  
+  .declineButton:hover {
+    background-color: #ebebeb;
+    transition-duration: .2s;
+  }
+
+@media (max-width: 1080px) { 
+
+    .container-cards{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+  }
+
+}
+
+@media (max-width: 960px) { 
+
+    .container-cards{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+  }
+
+}
+
+@media (max-width: 650px) { 
+
+    .container-cards{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      place-items: center;
+  }
+
+}
+
+
+/*Estilos do Cardapio.html*/
+
+.table-container{
+    margin-top: 2rem;
+}
+
+tr{
+    border: 2px solid;
+}
+
+td{
+    border: 2px solid;
+}
+
+.img-cardapio{
+    width: 50px;
+    display: grid;
+    place-items: center;
+}
+
+/*Estilos do Contato.html*/
+
+.control-contato{
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cc6520;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+}
+
+.input-text{
+  margin: 0.5rem;
+  background-color: #fff;
+  color: #cc6520;
+  border: 1px solid #cc6520;
+}
+
+.input-text::placeholder{
+  color: #cc6520;
+}
+
+
+.button-enviar{
+  background-color: #cc6520;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.7s all;
+  
+}
+
+.button-enviar:hover{
+  background-color: #fff;
+  color: #cc6520;
+  border: 1px solid #cc6520;
+}
+
+
+/*Estilos página Sobre.html*/
+
+.texto-sobre{
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px;
+  font-size: 16px;
+}
